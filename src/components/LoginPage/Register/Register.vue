@@ -16,7 +16,7 @@
 
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn outlined block color="primary">Hemen Üye Ol</v-btn>
+              <v-btn outlined block color="primary" to="/signup">Hemen Üye Ol</v-btn>
             </v-card-actions>
           </div>
         </div>
