@@ -51,20 +51,47 @@
         v-model="select"
         :items="items"
         :rules="[(v) => !!v || 'Item is required']"
-        label="Item"
+        label="İl"
         outlined
         dense
         required
         ></v-select>
-
-        <v-checkbox
-        v-model="checkbox"
-        :rules="[(v) => !!v || 'You must agree to continue!']"
-        label="Do you agree?"
+        <v-select
+        v-model="select"
+        :items="items"
+        :rules="[(v) => !!v || 'Item is required']"
+        label="İlçe"
+        outlined
+        dense
         required
+        ></v-select>
+        <v-select
+        v-model="select"
+        :items="items"
+        :rules="[(v) => !!v || 'Item is required']"
+        label="Mahalle"
+        outlined
+        dense
+        required
+        ></v-select>
+    <v-textarea
+      background-color="grey lighten-2"
+      color="cyan"
+      outlined
+      label="Adres Detayı"
+    ></v-textarea>
+        <v-checkbox
+        v-model="checkbox2"
+        :rules="[(v) => !!v || 'You must agree to continue!']"
+        label="Üyelik Sözleşmesi'ni ve Gizlilik Politikasını kabul ediyorum."
+        
         ></v-checkbox>
 
-
+<v-checkbox
+        v-model="checkbox"
+        label="İletişim bilgilerine kampanya, tanıtım ve reklam içerikli ticari elektronik ileti göderilmesine Bu amaçla kişisel verilerimin işlenmesine ve tedarikçilerinizle paylaşılmasına izin veriyorum."
+        required
+        ></v-checkbox>
         <v-btn color="error" class="mr-4" @click="reset">
         Reset Form
         </v-btn>
